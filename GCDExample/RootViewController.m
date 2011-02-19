@@ -12,11 +12,10 @@
 
 - (void)viewDidLoad
 {
-    [super viewDidLoad];
-    
     imagePath = [[[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"Pixar-Wallpaper-Pack"] copy];
     imageArray = [[[NSFileManager defaultManager] contentsOfDirectoryAtPath:imagePath
                                                                       error:NULL] retain];
+    [super viewDidLoad];
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -58,7 +57,6 @@
     return [imageArray count];;
 }
 
-// Customize the appearance of table view cells.
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *CellIdentifier = @"Cell";
@@ -74,11 +72,43 @@
     
     UIImage *image = [UIImage imageWithContentsOfFile:imageFilePath];
     
-    [cell setImage:image];
-    [cell setText:imageFilename];
+    [[cell imageView] setImage:image];
+    [[cell textLabel] setText:imageFilename];
     
     return cell;
 }
+
+//- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+//{
+//    static NSString *CellIdentifier = @"Cell";
+//    
+//    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+//    if (cell == nil) {
+//        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
+//    }
+//    
+//    // Configure the cell.
+//    NSString *imageFilename = [imageArray objectAtIndex:[indexPath row]];
+//    NSString *imageFilePath = [imagePath stringByAppendingPathComponent:imageFilename];
+//    
+//    [[cell textLabel] setText:imageFilename];
+//    
+//    dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0ul);
+//
+//    dispatch_async(queue, ^{
+//        NSLog(@"Loading image at path %@", imageFilePath);
+//        
+//        UIImage *image = [UIImage imageWithContentsOfFile:imageFilePath];
+//    
+//        dispatch_sync(dispatch_get_main_queue(), ^{
+//            [[cell imageView] setImage:image];
+//            [cell setNeedsDisplay];
+//            [cell setNeedsLayout];
+//        });
+//    });
+//    
+//    return cell;
+//}
 
 /*
 // Override to support conditional editing of the table view.
