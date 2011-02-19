@@ -16,6 +16,7 @@
 		AA4D8A5E130F6A75001FD5CB /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA4D8A5C130F6A75001FD5CB /* MainWindow.xib */; };
 		AA4D8A61130F6A75001FD5CB /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA4D8A60130F6A75001FD5CB /* RootViewController.m */; };
 		AA4D8A64130F6A75001FD5CB /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA4D8A62130F6A75001FD5CB /* RootViewController.xib */; };
+		AA4D8A6B130F6B6D001FD5CB /* Pixar-Wallpaper-Pack in Resources */ = {isa = PBXBuildFile; fileRef = AA4D8A6A130F6B6D001FD5CB /* Pixar-Wallpaper-Pack */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,16 +24,17 @@
 		AA4D8A4A130F6A74001FD5CB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		AA4D8A4C130F6A74001FD5CB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		AA4D8A4E130F6A74001FD5CB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		AA4D8A52130F6A74001FD5CB /* GCDExample-Info.plist */ = {isa = PBXFileReference; path = "GCDExample-Info.plist"; sourceTree = "<group>"; };
+		AA4D8A52130F6A74001FD5CB /* GCDExample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GCDExample-Info.plist"; sourceTree = "<group>"; };
 		AA4D8A54130F6A74001FD5CB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		AA4D8A56130F6A74001FD5CB /* GCDExample-Prefix.pch */ = {isa = PBXFileReference; path = "GCDExample-Prefix.pch"; sourceTree = "<group>"; };
+		AA4D8A56130F6A74001FD5CB /* GCDExample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GCDExample-Prefix.pch"; sourceTree = "<group>"; };
 		AA4D8A57130F6A74001FD5CB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		AA4D8A59130F6A74001FD5CB /* GCDExampleAppDelegate.h */ = {isa = PBXFileReference; path = GCDExampleAppDelegate.h; sourceTree = "<group>"; };
+		AA4D8A59130F6A74001FD5CB /* GCDExampleAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCDExampleAppDelegate.h; sourceTree = "<group>"; };
 		AA4D8A5A130F6A74001FD5CB /* GCDExampleAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCDExampleAppDelegate.m; sourceTree = "<group>"; };
 		AA4D8A5D130F6A75001FD5CB /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
-		AA4D8A5F130F6A75001FD5CB /* RootViewController.h */ = {isa = PBXFileReference; path = RootViewController.h; sourceTree = "<group>"; };
+		AA4D8A5F130F6A75001FD5CB /* RootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		AA4D8A60130F6A75001FD5CB /* RootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		AA4D8A63130F6A75001FD5CB /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/RootViewController.xib; sourceTree = "<group>"; };
+		AA4D8A6A130F6B6D001FD5CB /* Pixar-Wallpaper-Pack */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Pixar-Wallpaper-Pack"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 		AA4D8A50130F6A74001FD5CB /* GCDExample */ = {
 			isa = PBXGroup;
 			children = (
+				AA4D8A6A130F6B6D001FD5CB /* Pixar-Wallpaper-Pack */,
 				AA4D8A59130F6A74001FD5CB /* GCDExampleAppDelegate.h */,
 				AA4D8A5A130F6A74001FD5CB /* GCDExampleAppDelegate.m */,
 				AA4D8A5C130F6A75001FD5CB /* MainWindow.xib */,
@@ -151,6 +154,7 @@
 				AA4D8A55130F6A74001FD5CB /* InfoPlist.strings in Resources */,
 				AA4D8A5E130F6A75001FD5CB /* MainWindow.xib in Resources */,
 				AA4D8A64130F6A75001FD5CB /* RootViewController.xib in Resources */,
+				AA4D8A6B130F6B6D001FD5CB /* Pixar-Wallpaper-Pack in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

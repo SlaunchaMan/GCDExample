@@ -13,6 +13,10 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    imagePath = [[[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"Pixar-Wallpaper-Pack"] copy];
+    imageArray = [[[NSFileManager defaultManager] contentsOfDirectoryAtPath:imagePath
+                                                                      error:NULL] retain];
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -51,7 +55,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 0;
+    return [imageArray count];;
 }
 
 // Customize the appearance of table view cells.
@@ -65,6 +69,14 @@
     }
 
     // Configure the cell.
+    NSString *imageFilename = [imageArray objectAtIndex:[indexPath row]];
+    NSString *imageFilePath = [imagePath stringByAppendingPathComponent:imageFilename];
+    
+    UIImage *image = [UIImage imageWithContentsOfFile:imageFilePath];
+    
+    [cell setImage:image];
+    [cell setText:imageFilename];
+    
     return cell;
 }
 
