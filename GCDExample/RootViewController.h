@@ -10,7 +10,7 @@
 
 @interface RootViewController : UITableViewController {
     NSArray *imageArray;
-    NSString *imagePath;
+    NSString *imageFolder;
 }
 
 
