@@ -41,7 +41,7 @@
                                        reuseIdentifier:CellIdentifier] autorelease];
     }
     
-    // Configure the cell.
+    // Get the filename to load.
     NSString *imageFilename = [imageArray objectAtIndex:[indexPath row]];
     NSString *imagePath = [imageFolder stringByAppendingPathComponent:imageFilename];
     
