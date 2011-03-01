@@ -281,6 +281,7 @@
 				AA4D8A69130F6A75001FD5CB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
