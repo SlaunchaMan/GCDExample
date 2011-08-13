@@ -12,6 +12,7 @@
 @interface RootViewController : UITableViewController {
     NSArray 	*imageArray;
     NSString	*imageFolder;
+	NSCache 	*imageCache;
 }
 
 
