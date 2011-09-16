@@ -102,7 +102,7 @@ static char * const kIndexPathAssociationKey = "JK_indexPath";
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return [imageArray count];;
+    return [imageArray count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView
