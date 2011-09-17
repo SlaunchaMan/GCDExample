@@ -132,7 +132,7 @@ static char * const kIndexPathAssociationKey = "JK_indexPath";
 		dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0ul);
 		
 		// Get the height of the cell to pass to the block.
-		CGFloat cellHeight = [self tableView:tableView heightForRowAtIndexPath:indexPath];
+		CGFloat cellHeight = [tableView rowHeight];
 		
 		// Now, we can’t cancel a block once it begins, so we’ll use associated objects and compare
 		// index paths to see if we should continue once we have a resized image.
