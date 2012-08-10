@@ -9,10 +9,6 @@
 #import <UIKit/UIKit.h>
 
 
-@interface RootViewController : UITableViewController {
-    NSArray 	*imageArray;
-    NSString	*imageFolder;
-	NSCache 	*imageCache;
-}
+@interface RootViewController : UITableViewController
 
 @end

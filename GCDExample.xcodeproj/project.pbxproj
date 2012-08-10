@@ -10,6 +10,7 @@
 		1F463C9013F621790003CDB8 /* UIImage+Resize.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F463C8F13F621790003CDB8 /* UIImage+Resize.m */; };
 		1F463C9513F622200003CDB8 /* UIImage+Alpha.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F463C9213F622200003CDB8 /* UIImage+Alpha.m */; };
 		1F463C9613F622200003CDB8 /* UIImage+RoundedCorner.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F463C9413F622200003CDB8 /* UIImage+RoundedCorner.m */; };
+		1F75676D15D4BD93004512BE /* Nature in Resources */ = {isa = PBXBuildFile; fileRef = 1F75676C15D4BD93004512BE /* Nature */; };
 		AA4D8A4B130F6A74001FD5CB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA4D8A4A130F6A74001FD5CB /* UIKit.framework */; };
 		AA4D8A4D130F6A74001FD5CB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA4D8A4C130F6A74001FD5CB /* Foundation.framework */; };
 		AA4D8A4F130F6A74001FD5CB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA4D8A4E130F6A74001FD5CB /* CoreGraphics.framework */; };
@@ -19,7 +20,6 @@
 		AA4D8A5E130F6A75001FD5CB /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA4D8A5C130F6A75001FD5CB /* MainWindow.xib */; };
 		AA4D8A61130F6A75001FD5CB /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA4D8A60130F6A75001FD5CB /* RootViewController.m */; };
 		AA4D8A64130F6A75001FD5CB /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA4D8A62130F6A75001FD5CB /* RootViewController.xib */; };
-		AA4D8A6B130F6B6D001FD5CB /* Pixar-Wallpaper-Pack in Resources */ = {isa = PBXBuildFile; fileRef = AA4D8A6A130F6B6D001FD5CB /* Pixar-Wallpaper-Pack */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +29,7 @@
 		1F463C9213F622200003CDB8 /* UIImage+Alpha.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Alpha.m"; sourceTree = "<group>"; };
 		1F463C9313F622200003CDB8 /* UIImage+RoundedCorner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+RoundedCorner.h"; sourceTree = "<group>"; };
 		1F463C9413F622200003CDB8 /* UIImage+RoundedCorner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+RoundedCorner.m"; sourceTree = "<group>"; };
+		1F75676C15D4BD93004512BE /* Nature */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Nature; sourceTree = "<group>"; };
 		AA4D8A46130F6A74001FD5CB /* GCDExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GCDExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA4D8A4A130F6A74001FD5CB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		AA4D8A4C130F6A74001FD5CB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -43,7 +44,6 @@
 		AA4D8A5F130F6A75001FD5CB /* RootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		AA4D8A60130F6A75001FD5CB /* RootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		AA4D8A63130F6A75001FD5CB /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/RootViewController.xib; sourceTree = "<group>"; };
-		AA4D8A6A130F6B6D001FD5CB /* Pixar-Wallpaper-Pack */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Pixar-Wallpaper-Pack"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,7 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				1F463C8D13F621650003CDB8 /* Categories */,
-				AA4D8A6A130F6B6D001FD5CB /* Pixar-Wallpaper-Pack */,
+				1F75676C15D4BD93004512BE /* Nature */,
 				AA4D8A59130F6A74001FD5CB /* GCDExampleAppDelegate.h */,
 				AA4D8A5A130F6A74001FD5CB /* GCDExampleAppDelegate.m */,
 				AA4D8A5C130F6A75001FD5CB /* MainWindow.xib */,
@@ -180,7 +180,7 @@
 				AA4D8A55130F6A74001FD5CB /* InfoPlist.strings in Resources */,
 				AA4D8A5E130F6A75001FD5CB /* MainWindow.xib in Resources */,
 				AA4D8A64130F6A75001FD5CB /* RootViewController.xib in Resources */,
-				AA4D8A6B130F6B6D001FD5CB /* Pixar-Wallpaper-Pack in Resources */,
+				1F75676D15D4BD93004512BE /* Nature in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
