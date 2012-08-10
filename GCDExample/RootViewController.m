@@ -10,10 +10,7 @@
 
 #import <objc/runtime.h>
 
-#import "UIImage+Resize.h"
 
-
-static char * const kIndexPathAssociationKey = "JK_indexPath";
 
 
 @implementation RootViewController {
