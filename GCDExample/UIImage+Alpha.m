@@ -6,8 +6,48 @@
 #import "UIImage+Alpha.h"
 
 // Private helper methods
-@interface UIImage ()
+@interface UIImage (AlphaPrivate)
 - (CGImageRef)newBorderMask:(NSUInteger)borderSize size:(CGSize)size;
+@end
+
+@implementation UIImage (AlphaPrivate)
+
+#pragma mark -
+#pragma mark Private helper methods
+
+// Creates a mask that makes the outer edges transparent and everything else opaque
+// The size must include the entire mask (opaque part + transparent border)
+// The caller is responsible for releasing the returned reference by calling CGImageRelease
+- (CGImageRef)newBorderMask:(NSUInteger)borderSize size:(CGSize)size {
+    CGColorSpaceRef colorSpace = CGColorSpaceCreateDeviceGray();
+    
+    // Build a context that's the same dimensions as the new size
+    CGContextRef maskContext = CGBitmapContextCreate(NULL,
+                                                     size.width,
+                                                     size.height,
+                                                     8, // 8-bit grayscale
+                                                     0,
+                                                     colorSpace,
+                                                     kCGBitmapByteOrderDefault | kCGImageAlphaNone);
+    
+    // Start with a mask that's entirely transparent
+    CGContextSetFillColorWithColor(maskContext, [UIColor blackColor].CGColor);
+    CGContextFillRect(maskContext, CGRectMake(0, 0, size.width, size.height));
+    
+    // Make the inner part (within the border) opaque
+    CGContextSetFillColorWithColor(maskContext, [UIColor whiteColor].CGColor);
+    CGContextFillRect(maskContext, CGRectMake(borderSize, borderSize, size.width - borderSize * 2, size.height - borderSize * 2));
+    
+    // Get an image of the context
+    CGImageRef maskImageRef = CGBitmapContextCreateImage(maskContext);
+    
+    // Clean up
+    CGContextRelease(maskContext);
+    CGColorSpaceRelease(colorSpace);
+    
+    return maskImageRef;
+}
+
 @end
 
 @implementation UIImage (Alpha)
@@ -86,42 +126,6 @@
     CGImageRelease(transparentBorderImageRef);
     
     return transparentBorderImage;
-}
-
-#pragma mark -
-#pragma mark Private helper methods
-
-// Creates a mask that makes the outer edges transparent and everything else opaque
-// The size must include the entire mask (opaque part + transparent border)
-// The caller is responsible for releasing the returned reference by calling CGImageRelease
-- (CGImageRef)newBorderMask:(NSUInteger)borderSize size:(CGSize)size {
-    CGColorSpaceRef colorSpace = CGColorSpaceCreateDeviceGray();
-    
-    // Build a context that's the same dimensions as the new size
-    CGContextRef maskContext = CGBitmapContextCreate(NULL,
-                                                     size.width,
-                                                     size.height,
-                                                     8, // 8-bit grayscale
-                                                     0,
-                                                     colorSpace,
-                                                     kCGBitmapByteOrderDefault | kCGImageAlphaNone);
-    
-    // Start with a mask that's entirely transparent
-    CGContextSetFillColorWithColor(maskContext, [UIColor blackColor].CGColor);
-    CGContextFillRect(maskContext, CGRectMake(0, 0, size.width, size.height));
-    
-    // Make the inner part (within the border) opaque
-    CGContextSetFillColorWithColor(maskContext, [UIColor whiteColor].CGColor);
-    CGContextFillRect(maskContext, CGRectMake(borderSize, borderSize, size.width - borderSize * 2, size.height - borderSize * 2));
-    
-    // Get an image of the context
-    CGImageRef maskImageRef = CGBitmapContextCreateImage(maskContext);
-    
-    // Clean up
-    CGContextRelease(maskContext);
-    CGColorSpaceRelease(colorSpace);
-    
-    return maskImageRef;
 }
 
 @end

@@ -34,21 +34,12 @@ static char * const kIndexPathAssociationKey = "JK_indexPath";
 
 - (void)awakeFromNib
 {
-	if (!imageCache) {
+	if (imageCache == nil) {
 		imageCache = [[NSCache alloc] init];
 		[imageCache setName:@"JKImageCache"];
 	}
 	
 	[super awakeFromNib];
-}
-
-- (void)dealloc
-{
-    [imageFolder release];
-    [imageArray release];
-	[imageCache release];
-    
-    [super dealloc];
 }
 
 #pragma mark - View Controller Lifecycle
@@ -59,15 +50,15 @@ static char * const kIndexPathAssociationKey = "JK_indexPath";
 
     NSString *resourcePath = [[NSBundle mainBundle] resourcePath];
     imageFolder = [[resourcePath stringByAppendingPathComponent:@"Pixar-Wallpaper-Pack"] copy];
-    imageArray = [[[NSFileManager defaultManager] contentsOfDirectoryAtPath:imageFolder
-                                                                      error:NULL] retain];
+    imageArray = [[NSFileManager defaultManager] contentsOfDirectoryAtPath:imageFolder
+                                                                      error:NULL];
 }
 
 - (void)didReceiveMemoryWarning
 {
-	[imageCache removeAllObjects];
-	
 	[super didReceiveMemoryWarning];
+
+	[imageCache removeAllObjects];
 }
 
 #pragma mark - UITableViewDataSource Protocol Methods
@@ -89,8 +80,8 @@ static char * const kIndexPathAssociationKey = "JK_indexPath";
     
     UITableViewCell *cell = (UITableViewCell *)[tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil) {
-        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault
-									   reuseIdentifier:CellIdentifier] autorelease];
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault
+									   reuseIdentifier:CellIdentifier];
     }
     
     // Get the filename to load.

@@ -15,5 +15,4 @@
 	NSCache 	*imageCache;
 }
 
-
 @end

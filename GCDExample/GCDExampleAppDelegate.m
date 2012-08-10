@@ -11,19 +11,6 @@
 
 @implementation GCDExampleAppDelegate
 
-@synthesize navigationController;
-@synthesize window;
-
-#pragma mark - Object Lifecycle
-
-- (void)dealloc
-{
-    [window release];
-    [navigationController release];
-	
-    [super dealloc];
-}
-
 #pragma mark - UIApplicationDelegate Protocol Methods
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
