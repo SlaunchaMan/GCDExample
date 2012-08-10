@@ -10,7 +10,6 @@
 		1F463C9013F621790003CDB8 /* UIImage+Resize.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F463C8F13F621790003CDB8 /* UIImage+Resize.m */; };
 		1F463C9513F622200003CDB8 /* UIImage+Alpha.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F463C9213F622200003CDB8 /* UIImage+Alpha.m */; };
 		1F463C9613F622200003CDB8 /* UIImage+RoundedCorner.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F463C9413F622200003CDB8 /* UIImage+RoundedCorner.m */; };
-		1F463C9913F622600003CDB8 /* JKCallbacksTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F463C9813F622600003CDB8 /* JKCallbacksTableViewCell.m */; };
 		AA4D8A4B130F6A74001FD5CB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA4D8A4A130F6A74001FD5CB /* UIKit.framework */; };
 		AA4D8A4D130F6A74001FD5CB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA4D8A4C130F6A74001FD5CB /* Foundation.framework */; };
 		AA4D8A4F130F6A74001FD5CB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA4D8A4E130F6A74001FD5CB /* CoreGraphics.framework */; };
@@ -30,8 +29,6 @@
 		1F463C9213F622200003CDB8 /* UIImage+Alpha.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Alpha.m"; sourceTree = "<group>"; };
 		1F463C9313F622200003CDB8 /* UIImage+RoundedCorner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+RoundedCorner.h"; sourceTree = "<group>"; };
 		1F463C9413F622200003CDB8 /* UIImage+RoundedCorner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+RoundedCorner.m"; sourceTree = "<group>"; };
-		1F463C9713F622600003CDB8 /* JKCallbacksTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKCallbacksTableViewCell.h; sourceTree = "<group>"; };
-		1F463C9813F622600003CDB8 /* JKCallbacksTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKCallbacksTableViewCell.m; sourceTree = "<group>"; };
 		AA4D8A46130F6A74001FD5CB /* GCDExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GCDExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA4D8A4A130F6A74001FD5CB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		AA4D8A4C130F6A74001FD5CB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -114,8 +111,6 @@
 				AA4D8A5F130F6A75001FD5CB /* RootViewController.h */,
 				AA4D8A60130F6A75001FD5CB /* RootViewController.m */,
 				AA4D8A62130F6A75001FD5CB /* RootViewController.xib */,
-				1F463C9713F622600003CDB8 /* JKCallbacksTableViewCell.h */,
-				1F463C9813F622600003CDB8 /* JKCallbacksTableViewCell.m */,
 				AA4D8A51130F6A74001FD5CB /* Supporting Files */,
 			);
 			path = GCDExample;
@@ -202,7 +197,6 @@
 				1F463C9013F621790003CDB8 /* UIImage+Resize.m in Sources */,
 				1F463C9513F622200003CDB8 /* UIImage+Alpha.m in Sources */,
 				1F463C9613F622200003CDB8 /* UIImage+RoundedCorner.m in Sources */,
-				1F463C9913F622600003CDB8 /* JKCallbacksTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
