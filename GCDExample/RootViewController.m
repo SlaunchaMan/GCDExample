@@ -11,6 +11,7 @@
 #import <objc/runtime.h>
 
 
+static const void *kRowKey = &kRowKey;
 
 
 @implementation RootViewController {
@@ -59,7 +60,29 @@
     NSString *imagePath = [imageFolder stringByAppendingPathComponent:imageFilename];
     
     [[cell textLabel] setText:[imageFilename stringByDeletingPathExtension]];
-	[[cell imageView] setImage:[[UIImage alloc] initWithContentsOfFile:imagePath]];
+	
+	[[cell imageView] setImage:nil];
+	
+	// Associate the row with the cell
+	NSNumber *rowNumber = @([indexPath row]);
+	
+	objc_setAssociatedObject(cell, kRowKey, rowNumber, OBJC_ASSOCIATION_RETAIN);
+
+	dispatch_queue_t backgroundQueue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0);
+
+	dispatch_async(backgroundQueue, ^{
+		UIImage *image = [[UIImage alloc] initWithContentsOfFile:imagePath];
+		
+		dispatch_async(dispatch_get_main_queue(), ^{
+			NSNumber *cellRow = objc_getAssociatedObject(cell, kRowKey);
+			
+			if ([cellRow isEqualToNumber:rowNumber]) {
+				[[cell imageView] setImage:image];
+				[cell setNeedsLayout];
+			}
+		});
+	});
+
 	    
 	return cell;
 }
