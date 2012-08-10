@@ -7,9 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1F463C9013F621790003CDB8 /* UIImage+Resize.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F463C8F13F621790003CDB8 /* UIImage+Resize.m */; };
-		1F463C9513F622200003CDB8 /* UIImage+Alpha.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F463C9213F622200003CDB8 /* UIImage+Alpha.m */; };
-		1F463C9613F622200003CDB8 /* UIImage+RoundedCorner.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F463C9413F622200003CDB8 /* UIImage+RoundedCorner.m */; };
 		1F75676D15D4BD93004512BE /* Nature in Resources */ = {isa = PBXBuildFile; fileRef = 1F75676C15D4BD93004512BE /* Nature */; };
 		AA4D8A4B130F6A74001FD5CB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA4D8A4A130F6A74001FD5CB /* UIKit.framework */; };
 		AA4D8A4D130F6A74001FD5CB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA4D8A4C130F6A74001FD5CB /* Foundation.framework */; };
@@ -23,12 +20,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1F463C8E13F621790003CDB8 /* UIImage+Resize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Resize.h"; sourceTree = "<group>"; };
-		1F463C8F13F621790003CDB8 /* UIImage+Resize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Resize.m"; sourceTree = "<group>"; };
-		1F463C9113F622200003CDB8 /* UIImage+Alpha.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Alpha.h"; sourceTree = "<group>"; };
-		1F463C9213F622200003CDB8 /* UIImage+Alpha.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Alpha.m"; sourceTree = "<group>"; };
-		1F463C9313F622200003CDB8 /* UIImage+RoundedCorner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+RoundedCorner.h"; sourceTree = "<group>"; };
-		1F463C9413F622200003CDB8 /* UIImage+RoundedCorner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+RoundedCorner.m"; sourceTree = "<group>"; };
 		1F75676C15D4BD93004512BE /* Nature */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Nature; sourceTree = "<group>"; };
 		AA4D8A46130F6A74001FD5CB /* GCDExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GCDExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA4D8A4A130F6A74001FD5CB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -60,19 +51,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1F463C8D13F621650003CDB8 /* Categories */ = {
-			isa = PBXGroup;
-			children = (
-				1F463C9113F622200003CDB8 /* UIImage+Alpha.h */,
-				1F463C9213F622200003CDB8 /* UIImage+Alpha.m */,
-				1F463C8E13F621790003CDB8 /* UIImage+Resize.h */,
-				1F463C8F13F621790003CDB8 /* UIImage+Resize.m */,
-				1F463C9313F622200003CDB8 /* UIImage+RoundedCorner.h */,
-				1F463C9413F622200003CDB8 /* UIImage+RoundedCorner.m */,
-			);
-			name = Categories;
-			sourceTree = "<group>";
-		};
 		AA4D8A3B130F6A74001FD5CB = {
 			isa = PBXGroup;
 			children = (
@@ -103,7 +81,6 @@
 		AA4D8A50130F6A74001FD5CB /* GCDExample */ = {
 			isa = PBXGroup;
 			children = (
-				1F463C8D13F621650003CDB8 /* Categories */,
 				1F75676C15D4BD93004512BE /* Nature */,
 				AA4D8A59130F6A74001FD5CB /* GCDExampleAppDelegate.h */,
 				AA4D8A5A130F6A74001FD5CB /* GCDExampleAppDelegate.m */,
@@ -194,9 +171,6 @@
 				AA4D8A58130F6A74001FD5CB /* main.m in Sources */,
 				AA4D8A5B130F6A74001FD5CB /* GCDExampleAppDelegate.m in Sources */,
 				AA4D8A61130F6A75001FD5CB /* RootViewController.m in Sources */,
-				1F463C9013F621790003CDB8 /* UIImage+Resize.m in Sources */,
-				1F463C9513F622200003CDB8 /* UIImage+Alpha.m in Sources */,
-				1F463C9613F622200003CDB8 /* UIImage+RoundedCorner.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
