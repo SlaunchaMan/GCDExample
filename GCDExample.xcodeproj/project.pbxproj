@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1F75676D15D4BD93004512BE /* Nature in Resources */ = {isa = PBXBuildFile; fileRef = 1F75676C15D4BD93004512BE /* Nature */; };
+		1FCF26EB160F720900BC4C88 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FCF26EA160F720900BC4C88 /* Default-568h@2x.png */; };
 		AA4D8A4B130F6A74001FD5CB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA4D8A4A130F6A74001FD5CB /* UIKit.framework */; };
 		AA4D8A4D130F6A74001FD5CB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA4D8A4C130F6A74001FD5CB /* Foundation.framework */; };
 		AA4D8A4F130F6A74001FD5CB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA4D8A4E130F6A74001FD5CB /* CoreGraphics.framework */; };
@@ -21,6 +22,7 @@
 
 /* Begin PBXFileReference section */
 		1F75676C15D4BD93004512BE /* Nature */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Nature; sourceTree = "<group>"; };
+		1FCF26EA160F720900BC4C88 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		AA4D8A46130F6A74001FD5CB /* GCDExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GCDExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA4D8A4A130F6A74001FD5CB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		AA4D8A4C130F6A74001FD5CB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -54,6 +56,7 @@
 		AA4D8A3B130F6A74001FD5CB = {
 			isa = PBXGroup;
 			children = (
+				1FCF26EA160F720900BC4C88 /* Default-568h@2x.png */,
 				AA4D8A50130F6A74001FD5CB /* GCDExample */,
 				AA4D8A49130F6A74001FD5CB /* Frameworks */,
 				AA4D8A47130F6A74001FD5CB /* Products */,
@@ -158,6 +161,7 @@
 				AA4D8A5E130F6A75001FD5CB /* MainWindow.xib in Resources */,
 				AA4D8A64130F6A75001FD5CB /* RootViewController.xib in Resources */,
 				1F75676D15D4BD93004512BE /* Nature in Resources */,
+				1FCF26EB160F720900BC4C88 /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
