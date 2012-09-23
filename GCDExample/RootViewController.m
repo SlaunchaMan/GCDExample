@@ -8,11 +8,6 @@
 
 #import "RootViewController.h"
 
-#import <objc/runtime.h>
-
-
-
-
 @implementation RootViewController {
     NSString	*imageFolder;
     NSArray 	*imagePathArray;
